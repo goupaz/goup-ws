@@ -16,12 +16,12 @@
 
 export const SITE_URL = 'https://demo.vercel.events';
 export const SITE_ORIGIN = process.env.NEXT_PUBLIC_SITE_ORIGIN || new URL(SITE_URL).origin;
-export const TWITTER_USER_NAME = 'vercel';
+export const TWITTER_USER_NAME = 'goupaz';
 export const BRAND_NAME = 'GOUP';
-export const SITE_NAME_MULTILINE = ['GOUP', 'Conf'];
-export const SITE_NAME = 'GOUP Conf';
+export const SITE_NAME_MULTILINE = ['GOUP', 'Events'];
+export const SITE_NAME = 'GOUP Events';
 export const META_DESCRIPTION =
-  'This is an open source demo that Next.js developers can clone, deploy, and fully customize for events. Created through collaboration of marketers, designers, and developers at Vercel.';
+  'Together we can do more.';
 export const SITE_DESCRIPTION =
   'An interactive online experience by the community, free for everyone.';
 export const DATE = 'June 04, 2021';
@@ -37,7 +37,7 @@ export const COPYRIGHT_HOLDER = process.env.NEXT_PUBLIC_COPYRIGHT_HOLDER;
 
 export const CODE_OF_CONDUCT =
   'https://www.notion.so/vercel/Code-of-Conduct-Example-7ddd8d0e9c354bb597a0faed87310a78';
-export const REPO = 'https://github.com/vercel/virtual-event-starter-kit';
+export const REPO = 'https://github.com/goupaz/goup-ws';
 export const SAMPLE_TICKET_NUMBER = 1234;
 export const NAVIGATION = [
   {
@@ -57,7 +57,7 @@ export const NAVIGATION = [
     route: '/schedule'
   },
   {
-    name: 'Blog',
+    name: 'Gallery',
     route: '/expo'
   },
 
@@ -70,7 +70,19 @@ export const NAVIGATION = [
     route: '/expo'
   },
   {
+    name: 'Playbooks',
+    route: '/expo'
+  },
+  {
+    name: 'Partners',
+    route: '/jobs'
+  },
+  {
     name: 'About Us',
+    route: '/jobs'
+  },
+  {
+    name: 'Join Us',
     route: '/jobs'
   }
 ];

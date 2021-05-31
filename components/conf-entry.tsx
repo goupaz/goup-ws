@@ -106,6 +106,32 @@ export default function ConfEntry({ onRegister }: { onRegister: () => void }) {
               />
             )}
           </label>
+          <p></p>
+          <label
+            htmlFor="email-input-field"
+            className={cn(styles['input-label'], {
+              [styles.focused]: focused,
+              [styles.error]: formState === 'error'
+            })}
+          >
+            {formState === 'error' ? (
+              <div className={cn(styles.input, styles['input-text'])}>{errorMsg}</div>
+            ) : (
+              <input
+                className={styles.input}
+                autoComplete="off"
+                type="email"
+                id="email-input-field"
+                value={emailInput}
+                onChange={e => setEmailInput(e.target.value)}
+                onFocus={() => setFocused(true)}
+                onBlur={() => setFocused(false)}
+                placeholder="Enter email to join the event"
+                aria-label="Your email address"
+                required
+              />
+            )}
+          </label>
           <button
             type="submit"
             className={cn(styles.submit, styles.register, styles[formState])}

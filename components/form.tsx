@@ -147,6 +147,117 @@ export default function Form({ sharePage }: Props) {
             required
           />
         </label>
+        <p></p>
+       
+        <label
+          htmlFor="email-input-field"
+          className={cn(styles['input-label'], {
+            [styles.focused]: focused
+          })}
+        >
+
+          <input
+            className={styles.input}
+            autoComplete="off"
+            type="checkbox"
+            id="email-input-field"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            onFocus={() => setFocused(true)}
+            onBlur={() => setFocused(false)}
+            placeholder="University"
+            aria-label="Your email address"
+            required
+          />
+        </label>
+        <p></p>
+        <label
+          htmlFor="email-input-field"
+          className={cn(styles['input-label'], {
+            [styles.focused]: focused
+          })}
+        >
+          
+          <input
+            className={styles.input}
+            autoComplete="off"
+            type="email"
+            id="email-input-field"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            onFocus={() => setFocused(true)}
+            onBlur={() => setFocused(false)}
+            placeholder="Location"
+            aria-label="Your email address"
+            required
+          />
+        </label>
+        <p></p>
+        <label
+          htmlFor="email-input-field"
+          className={cn(styles['input-label'], {
+            [styles.focused]: focused
+          })}
+        >
+          
+          <input
+            className={styles.input}
+            autoComplete="off"
+            type="email"
+            id="email-input-field"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            onFocus={() => setFocused(true)}
+            onBlur={() => setFocused(false)}
+            placeholder="Company"
+            aria-label="Your email address"
+            required
+          />
+        </label>
+        <p></p>
+        <label
+          htmlFor="email-input-field"
+          className={cn(styles['input-label'], {
+            [styles.focused]: focused
+          })}
+        >
+          
+          <input
+            className={styles.input}
+            autoComplete="off"
+            type="email"
+            id="email-input-field"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            onFocus={() => setFocused(true)}
+            onBlur={() => setFocused(false)}
+            placeholder="Role"
+            aria-label="Your email address"
+            required
+          />
+        </label>
+        <p></p>
+        <label
+          htmlFor="email-input-field"
+          className={cn(styles['input-label'], {
+            [styles.focused]: focused
+          })}
+        >
+          
+          <input
+            className={styles.input}
+            autoComplete="off"
+            type="email"
+            id="email-input-field"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            onFocus={() => setFocused(true)}
+            onBlur={() => setFocused(false)}
+            placeholder="University"
+            aria-label="Your email address"
+            required
+          />
+        </label>
         <button
           type="submit"
           className={cn(styles.submit, styles.register, styles[formState])}
